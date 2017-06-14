@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'dialog_addclassify.ui'
+# Form implementation generated from reading ui file 'Dialog_AddClassify.ui'
 #
 # Created by: PyQt5 UI code generator 5.8.2
 #
@@ -8,7 +8,14 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_Dialog_AddClassify(object):
+class Ui_Dialog_AddClassify(QtWidgets.QDialog):
+    def __init__(self):
+        super(Ui_Dialog_AddClassify, self).__init__()
+        self.setupUi(self)
+
+    def test(self):
+        print("Hello World")
+
     def setupUi(self, Dialog_AddClassify):
         Dialog_AddClassify.setObjectName("Dialog_AddClassify")
         Dialog_AddClassify.resize(400, 300)
@@ -25,6 +32,10 @@ class Ui_Dialog_AddClassify(object):
         self.buttonBox.setGeometry(QtCore.QRect(200, 240, 164, 32))
         self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
+
+        self.buttonBox.accepted.connect(self.test)  # 链接"添加分类"中Ok信号和槽
+        self.buttonBox.rejected.connect(self.close)  # 链接"添加分类"中Cancel信号和槽
+
         self.verticalLayoutWidget_2 = QtWidgets.QWidget(Dialog_AddClassify)
         self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(110, 20, 161, 51))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
@@ -34,6 +45,7 @@ class Ui_Dialog_AddClassify(object):
         self.comboBox_2 = QtWidgets.QComboBox(self.verticalLayoutWidget_2)
         self.comboBox_2.setObjectName("comboBox_2")
         self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("支出")
         self.verticalLayout_2.addWidget(self.comboBox_2)
         self.verticalLayoutWidget_4 = QtWidgets.QWidget(Dialog_AddClassify)
         self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(20, 160, 80, 51))
@@ -81,9 +93,9 @@ class Ui_Dialog_AddClassify(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog_AddClassify.setWindowTitle(_translate("Dialog_AddClassify", "Dialog"))
         self.label_2.setText(_translate("Dialog_AddClassify", "类型："))
-        self.comboBox_2.setItemText(0, _translate("Dialog_AddClassify", "支出"))
+        self.comboBox_2.setItemText(0, _translate("Dialog_AddClassify", "收入"))
         self.label.setText(_translate("Dialog_AddClassify", "上级分类："))
-        self.lineEdit.setText(_translate("Dialog_AddClassify", "类型："))
+        self.lineEdit.setText(_translate("Dialog_AddClassify", ""))
         self.comboBox.setItemText(0, _translate("Dialog_AddClassify", "无上级分类"))
         self.label_3.setText(_translate("Dialog_AddClassify", "分类："))
 
