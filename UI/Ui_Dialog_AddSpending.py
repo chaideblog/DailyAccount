@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from Tools import TimeTools
 
 class Ui_Dialog_AddSpending(QtWidgets.QDialog):
     def __init__(self):
@@ -15,6 +16,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
 
     def test(self):
         print("Hello World")
+
 
     def setupUi(self, Dialog_AddSpending):
         Dialog_AddSpending.setObjectName("Dialog_AddSpending")
@@ -44,7 +46,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.dateEdit = QtWidgets.QDateEdit(self.verticalLayoutWidget_3)
-        self.dateEdit.setDateTime(QtCore.QDateTime(QtCore.QDate(2017, 6, 1), QtCore.QTime(0, 0, 0)))
+        self.dateEdit.setDateTime(QtCore.QDateTime(QtCore.QDate(TimeTools.getCurrentYear(), TimeTools.getCurrentMonth(), TimeTools.getCurrentDay()), QtCore.QTime(0, 0, 0)))
         self.dateEdit.setObjectName("dateEdit")
         self.verticalLayout_3.addWidget(self.dateEdit)
         self.verticalLayoutWidget_4 = QtWidgets.QWidget(Dialog_AddSpending)

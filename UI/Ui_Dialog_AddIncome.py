@@ -7,6 +7,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from Tools import TimeTools
+
 
 class Ui_Dialog_AddIncome(QtWidgets.QDialog):
     def __init__(self):
@@ -35,7 +37,7 @@ class Ui_Dialog_AddIncome(QtWidgets.QDialog):
         self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_11.setObjectName("verticalLayout_11")
         self.dateEdit_2 = QtWidgets.QDateEdit(self.verticalLayoutWidget)
-        self.dateEdit_2.setDateTime(QtCore.QDateTime(QtCore.QDate(2017, 6, 1), QtCore.QTime(0, 0, 0)))
+        self.dateEdit_2.setDateTime(QtCore.QDateTime(QtCore.QDate(TimeTools.getCurrentYear(), TimeTools.getCurrentMonth(), TimeTools.getCurrentDay()), QtCore.QTime(0, 0, 0)))
         self.dateEdit_2.setObjectName("dateEdit_2")
         self.verticalLayout_11.addWidget(self.dateEdit_2)
         self.verticalLayoutWidget_9 = QtWidgets.QWidget(Dialog_AddIncome)
