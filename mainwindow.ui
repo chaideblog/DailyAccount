@@ -110,6 +110,92 @@
      </item>
     </layout>
    </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>129</y>
+      <width>681</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>分类</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>每日总计</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>每月总计</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>收入</string>
+        </property>
+        <property name="text">
+         <string>100</string>
+        </property>
+        <property name="text">
+         <string>100</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>工资</string>
+         </property>
+         <property name="text">
+          <string>99</string>
+         </property>
+         <property name="text">
+          <string>99</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>支出</string>
+        </property>
+        <property name="text">
+         <string>200</string>
+        </property>
+        <property name="text">
+         <string>200</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>衣服</string>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>结余</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -232,11 +318,6 @@
   <action name="Menu_Editor_AddSpending">
    <property name="text">
     <string>添加支出</string>
-   </property>
-  </action>
-  <action name="actiond_3">
-   <property name="text">
-    <string>d</string>
    </property>
   </action>
   <action name="Menu_Editor_Classify">
