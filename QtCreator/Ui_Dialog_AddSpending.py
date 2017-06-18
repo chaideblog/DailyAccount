@@ -1,28 +1,19 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'Dialog_AddSpending.ui'
+# Form implementation generated from reading ui file 'dialog_addspending.ui'
 #
 # Created by: PyQt5 UI code generator 5.8.2
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from Tools import TimeTools
 
 class Ui_Dialog_AddSpending(QtWidgets.QDialog):
-    def __init__(self):
-        super(Ui_Dialog_AddSpending, self).__init__()
-        self.setupUi(self)
-
-    def test(self):
-        print("Hello World")
-
-
     def setupUi(self, Dialog_AddSpending):
         Dialog_AddSpending.setObjectName("Dialog_AddSpending")
         Dialog_AddSpending.resize(411, 441)
         self.verticalLayoutWidget = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(19, 19, 71, 31))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(19, 19, 41, 31))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -31,7 +22,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.label_5.setObjectName("label_5")
         self.verticalLayout.addWidget(self.label_5)
         self.verticalLayoutWidget_2 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(20, 70, 71, 31))
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(20, 70, 41, 31))
         self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -40,17 +31,17 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.label.setObjectName("label")
         self.verticalLayout_2.addWidget(self.label)
         self.verticalLayoutWidget_3 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(110, 20, 141, 31))
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(80, 20, 101, 31))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.dateEdit = QtWidgets.QDateEdit(self.verticalLayoutWidget_3)
-        self.dateEdit.setDateTime(QtCore.QDateTime(QtCore.QDate(TimeTools.getCurrentYear(), TimeTools.getCurrentMonth(), TimeTools.getCurrentDay()), QtCore.QTime(0, 0, 0)))
+        self.dateEdit.setDateTime(QtCore.QDateTime(QtCore.QDate(2017, 6, 1), QtCore.QTime(0, 0, 0)))
         self.dateEdit.setObjectName("dateEdit")
         self.verticalLayout_3.addWidget(self.dateEdit)
         self.verticalLayoutWidget_4 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(110, 70, 191, 31))
+        self.verticalLayoutWidget_4.setGeometry(QtCore.QRect(80, 70, 191, 31))
         self.verticalLayoutWidget_4.setObjectName("verticalLayoutWidget_4")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_4)
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -59,7 +50,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.comboBox.setObjectName("comboBox")
         self.verticalLayout_4.addWidget(self.comboBox)
         self.verticalLayoutWidget_5 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_5.setGeometry(QtCore.QRect(110, 120, 191, 31))
+        self.verticalLayoutWidget_5.setGeometry(QtCore.QRect(80, 120, 191, 31))
         self.verticalLayoutWidget_5.setObjectName("verticalLayoutWidget_5")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_5)
         self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -68,7 +59,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.comboBox_2.setObjectName("comboBox_2")
         self.verticalLayout_5.addWidget(self.comboBox_2)
         self.verticalLayoutWidget_6 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_6.setGeometry(QtCore.QRect(20, 120, 71, 31))
+        self.verticalLayoutWidget_6.setGeometry(QtCore.QRect(20, 120, 41, 31))
         self.verticalLayoutWidget_6.setObjectName("verticalLayoutWidget_6")
         self.verticalLayout_6 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_6)
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -77,7 +68,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.label_2.setObjectName("label_2")
         self.verticalLayout_6.addWidget(self.label_2)
         self.verticalLayoutWidget_7 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_7.setGeometry(QtCore.QRect(20, 170, 71, 31))
+        self.verticalLayoutWidget_7.setGeometry(QtCore.QRect(20, 170, 41, 31))
         self.verticalLayoutWidget_7.setObjectName("verticalLayoutWidget_7")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_7)
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -86,7 +77,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.label_3.setObjectName("label_3")
         self.verticalLayout_7.addWidget(self.label_3)
         self.verticalLayoutWidget_8 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_8.setGeometry(QtCore.QRect(110, 170, 191, 31))
+        self.verticalLayoutWidget_8.setGeometry(QtCore.QRect(80, 170, 191, 31))
         self.verticalLayoutWidget_8.setObjectName("verticalLayoutWidget_8")
         self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_8)
         self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
@@ -95,7 +86,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.verticalLayout_8.addWidget(self.lineEdit_2)
         self.verticalLayoutWidget_9 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_9.setGeometry(QtCore.QRect(20, 220, 71, 31))
+        self.verticalLayoutWidget_9.setGeometry(QtCore.QRect(20, 220, 41, 31))
         self.verticalLayoutWidget_9.setObjectName("verticalLayoutWidget_9")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_9)
         self.verticalLayout_9.setContentsMargins(0, 0, 0, 0)
@@ -104,7 +95,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.label_4.setObjectName("label_4")
         self.verticalLayout_9.addWidget(self.label_4)
         self.verticalLayoutWidget_10 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_10.setGeometry(QtCore.QRect(110, 220, 281, 101))
+        self.verticalLayoutWidget_10.setGeometry(QtCore.QRect(80, 220, 311, 101))
         self.verticalLayoutWidget_10.setObjectName("verticalLayoutWidget_10")
         self.verticalLayout_10 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_10)
         self.verticalLayout_10.setContentsMargins(0, 0, 0, 0)
@@ -113,7 +104,7 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.plainTextEdit.setObjectName("plainTextEdit")
         self.verticalLayout_10.addWidget(self.plainTextEdit)
         self.verticalLayoutWidget_11 = QtWidgets.QWidget(Dialog_AddSpending)
-        self.verticalLayoutWidget_11.setGeometry(QtCore.QRect(110, 340, 191, 31))
+        self.verticalLayoutWidget_11.setGeometry(QtCore.QRect(80, 340, 191, 31))
         self.verticalLayoutWidget_11.setObjectName("verticalLayoutWidget_11")
         self.verticalLayout_11 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_11)
         self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
@@ -130,11 +121,25 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         self.buttonBox = QtWidgets.QDialogButtonBox(self.verticalLayoutWidget_12)
         self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
-
-        self.buttonBox.accepted.connect(self.test)  # 链接"添加支出"中Ok信号和槽
-        self.buttonBox.rejected.connect(self.close)  # 链接"添加支出"中Cancel信号和槽
-
         self.verticalLayout_12.addWidget(self.buttonBox)
+        self.verticalLayoutWidget_13 = QtWidgets.QWidget(Dialog_AddSpending)
+        self.verticalLayoutWidget_13.setGeometry(QtCore.QRect(199, 19, 41, 31))
+        self.verticalLayoutWidget_13.setObjectName("verticalLayoutWidget_13")
+        self.verticalLayout_13 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_13)
+        self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_13.setObjectName("verticalLayout_13")
+        self.label_6 = QtWidgets.QLabel(self.verticalLayoutWidget_13)
+        self.label_6.setObjectName("label_6")
+        self.verticalLayout_13.addWidget(self.label_6)
+        self.verticalLayoutWidget_14 = QtWidgets.QWidget(Dialog_AddSpending)
+        self.verticalLayoutWidget_14.setGeometry(QtCore.QRect(260, 20, 102, 31))
+        self.verticalLayoutWidget_14.setObjectName("verticalLayoutWidget_14")
+        self.verticalLayout_14 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_14)
+        self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_14.setObjectName("verticalLayout_14")
+        self.timeEdit = QtWidgets.QTimeEdit(self.verticalLayoutWidget_14)
+        self.timeEdit.setObjectName("timeEdit")
+        self.verticalLayout_14.addWidget(self.timeEdit)
 
         self.retranslateUi(Dialog_AddSpending)
         QtCore.QMetaObject.connectSlotsByName(Dialog_AddSpending)
@@ -144,8 +149,9 @@ class Ui_Dialog_AddSpending(QtWidgets.QDialog):
         Dialog_AddSpending.setWindowTitle(_translate("Dialog_AddSpending", "Dialog"))
         self.label_5.setText(_translate("Dialog_AddSpending", "日期："))
         self.label.setText(_translate("Dialog_AddSpending", "分类："))
-        self.label_2.setText(_translate("Dialog_AddSpending", "支付方式："))
+        self.label_2.setText(_translate("Dialog_AddSpending", "支付："))
         self.label_3.setText(_translate("Dialog_AddSpending", "金额："))
         self.label_4.setText(_translate("Dialog_AddSpending", "说明："))
         self.checkBox.setText(_translate("Dialog_AddSpending", "不关闭对话框，继续添加"))
+        self.label_6.setText(_translate("Dialog_AddSpending", "时间："))
 
