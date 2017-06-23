@@ -5,7 +5,7 @@ import sys
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
-from UI import MainWindow, Dialog_AddClassify, Dialog_AddSpending, Dialog_AddIncome
+from UI import MainWindow, Dialog_AddClassify, Dialog_AddSpending, Dialog_AddIncome, Dialog_Test
 
 def test():
     print('Hello World!')
@@ -31,12 +31,16 @@ def show_Dialog_AddSpending():
         dialog_AddSpending.show()
     dialog_AddSpending.destroy()
 
+def show_Test(mainWindow):
+    mainWindow.widget.close()
+
 if __name__ == '__main__':
     myapp = QApplication(sys.argv)
-    mianWindow = MainWindow.MainWindow()
-    mianWindow.Button_AddClassify.clicked.connect(show_Dialog_AddClassify)
-    mianWindow.Button_AddIncome.clicked.connect(show_Dialog_AddIncome)
-    mianWindow.Button_AddSpending.clicked.connect(show_Dialog_AddSpending)
-    mianWindow.show()
+    mainWindow = MainWindow.MainWindow()
+    mainWindow.Button_AddClassify.clicked.connect(show_Dialog_AddClassify)
+    mainWindow.Button_AddIncome.clicked.connect(show_Dialog_AddIncome)
+    mainWindow.Button_AddSpending.clicked.connect(show_Dialog_AddSpending)
+    mainWindow.Button_Classify.clicked.connect(show_Test)
+    mainWindow.show()
 
     sys.exit(myapp.exec_())
